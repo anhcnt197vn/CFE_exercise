@@ -1,6 +1,9 @@
 import React from 'react'
 import logo from './static/wooder/images/logo.png'
-import arrow from './static/wooder/images/arrow-icon.png'
+import arrowRightIcon from './static/wooder/images/arrow-right-icon.png'
+import arrowLeftIcon from './static/wooder/images/arrow-left-icon.png'
+import mouseIcon from './static/wooder/images/mouse-icon.png'
+import arrowDownIcon from './static/wooder/images/arrow-down-icon.png'
 import { CaretDownIcon } from './static/wooder/icons/CaretDownIcon'
 import './static/wooder/css/style.css'
 
@@ -27,8 +30,30 @@ function App() {
             <h1>WOODER</h1>
             <button className='first-section__learn-more--btn'>
               <span>Learn more</span>
-              <img src={arrow} />
+              <img src={arrowRightIcon} />
             </button>
+          </div>
+          <div className='first-section__bottom-section'>
+            <div className='first-section__bottom-section--left'>
+              <div className="straight-line margin"/>
+              <p>01</p>
+              <span className="dot active" />
+              <span className="dot" />
+              <span className="dot" />
+              <span className="dot" />
+            </div>
+            <div className='first-section__bottom-section--middle'>
+              <img className='first-section__bottom-section--middle__mouse-icon' src={mouseIcon} />
+              <img className='first-section__bottom-section--middle__arrow-down-icon' src={arrowDownIcon} />
+            </div>
+            <div className='first-section__bottom-section--right'>
+              <button className='first-section__bottom-section--right__btn-left'>
+                <img src={arrowLeftIcon} />
+              </button>
+              <button className='first-section__bottom-section--right__btn-right'>
+                <img src={arrowRightIcon} />
+              </button>
+            </div>
           </div>
         </body>
       </section>
